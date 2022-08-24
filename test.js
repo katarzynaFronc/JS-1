@@ -1,5 +1,12 @@
-// the first alert
-alert("Hello, World!");
+var youLikeMeet = true;
+var myNum = 10;
 
-// the second alert
-alert("Hello again!");
+if (youLikeMeet){
+
+    document.write("Here is the meaty menu.");
+
+} else{
+    
+    document.write("Here is the vegan menu")
+
+}
