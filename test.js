@@ -1,18 +1,28 @@
-function getAverage (a,b){
+var myCar = new Object ();
+myCar.maxSpeed = 150;
+myCar.driver = "Kaja";
 
-    var average = (a + b) / 2; //local variable
-    console.log(average);
-    return average;
+console.log(myCar.driver);
 
-}
+myCar.drive = function(){ 
+    
+    console.log("now driving");
 
-var myResult = getAverage(7,8); //global variable
+};
 
+myCar.drive();
 
-function logResult(){
+var myCar2 = {
 
-    console.log("the average is " + myResult + "inside the function");
+    maxSpeed: 50, 
+    driver: "Tomi", 
+    drive: function(speed, time){
+        
+        console.log(speed * time);
 
-}
+    }
 
-logResult();
+};
+
+console.log(myCar2.maxSpeed);
+myCar2.drive(120, 3);
