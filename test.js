@@ -1,9 +1,10 @@
-var links = document.getElementsByTagName("a");
+function getAverage (a,b){
 
-for (i = 0; i <= links.length; i++) {
+    var average = (a + b) / 2;
+    console.log(average);
+    return average;
 
-    console.log("this is link number" + i);
-    
 }
 
-document.write("all links now loopted");
+var myResult = getAverage(7,8);
+console.log("the average is " + myResult);
