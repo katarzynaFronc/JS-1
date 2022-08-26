@@ -1,19 +1,16 @@
-var Car = function(maxSpeed, driver){
+var content = document.getElementById("content");
+var bottom = document.getElementById("show-more");
 
-    this.maxSpeed = maxSpeed;
-    this.driver = driver;
-    this.drive = function(speed, time){
-        console.log(speed * time);
-    },
-    this.logDriver = function(){
-        console.log("driver name is " + this.driver);
-    } 
+button.onclick = function(){
+
+    if(content.className == "open"){
+        //shrink the box
+        content.className = "";
+        button.innerHTML = "Show More";
+    } else{
+        //expand the box
+        content.className = "open";
+        button.innerHTML = "Show Less";
+    }
+
 };
-
-var myCar = new Car(70, "Kaja");
-var myCar2 = new Car(80, "Tomi");
-var myCar3 = new Car(60, "TyMi");
-var myCar4 = new Car(90, "Kfaf");
-
-myCar.drive(30,5);
-myCar3.logDriver();
